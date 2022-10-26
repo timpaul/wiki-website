@@ -1,0 +1,16 @@
+{% extends "layout.njk" %}
+
+{% set parentPage = collections.all | filterBy('fileSlug', parent) %}
+
+{% block beforeContent %}
+    {%- if parentPage -%}
+        <a class="back-link" href='/{{ parentPage.fileSlug }}'>Back to {{ parentPage.fileSlug | deslug | lower }}</a>
+    {%- elseif permalink !== "/" -%}
+        <a class="back-link" href='/'>Back to home</a>
+    {%- endif -%}
+{% endblock %}
+
+{% block content %}
+    <h1>{{ page.fileSlug | deslug | capitalise }}</h1>
+    {{- super() -}}
+{% endblock %}
