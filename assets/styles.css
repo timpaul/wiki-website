@@ -322,7 +322,7 @@ hr {
   transform: rotate(-135deg);
   border-style: solid;
   border-width: var(--chevron-thickness) var(--chevron-thickness) 0 0;
-  border-color: var(--link-color);
+  border-color: var(--text-color);
 }
 
 .back-to-top {
