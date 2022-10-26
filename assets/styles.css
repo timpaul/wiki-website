@@ -288,8 +288,14 @@ hr {
   font-weight: bold;
 }
 
+.navigation ul{
+  margin: 10px 0;
+  padding: 0;
+}
 .navigation li{
- float: left; 
+  display: inline-block;
+  border: var(--line-thickness) solid;
+  padding: 5px 10px;
 }
 .navigation li a:not(:hover):not(:focus) {
   text-decoration: none;
