@@ -288,6 +288,14 @@ hr {
   font-weight: bold;
 }
 
+.header li{
+ float: left; 
+}
+
+.header li a:not(:hover):not(:focus) {
+  text-decoration: none;
+}
+
 .back-link {
   position: relative;
   margin-top: var(--main-padding-top);
