@@ -288,11 +288,10 @@ hr {
   font-weight: bold;
 }
 
-.header li{
+.navigation li{
  float: left; 
 }
-
-.header li a:not(:hover):not(:focus) {
+.navigation li a:not(:hover):not(:focus) {
   text-decoration: none;
 }
 
